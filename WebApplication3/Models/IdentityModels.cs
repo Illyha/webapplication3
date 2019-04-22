@@ -16,6 +16,8 @@ namespace WebApplication3.Models
             // Здесь добавьте утверждения пользователя
             return userIdentity;
         }
+        public string Email { get; set; }
+        public bool ConfirmedEmail { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
